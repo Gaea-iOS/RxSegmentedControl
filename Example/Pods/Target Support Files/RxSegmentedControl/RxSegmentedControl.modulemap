@@ -1,0 +1,6 @@
+framework module RxSegmentedControl {
+  umbrella header "RxSegmentedControl-umbrella.h"
+
+  export *
+  module * { export * }
+}

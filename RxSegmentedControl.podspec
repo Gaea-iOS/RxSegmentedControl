@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxSegmentedControl'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of RxSegmentedControl.'
 
 # This description is used to generate tags and improve search results.
@@ -21,16 +21,18 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/wangxiaotao/RxSegmentedControl'
+  s.homepage         = 'https://github.com/Gaea-iOS/RxSegmentedControl'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wangxiaotao' => '445242970@qq.com' }
-  s.source           = { :git => 'https://github.com/wangxiaotao/RxSegmentedControl.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Gaea-iOS/RxSegmentedControl.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'RxSegmentedControl/Classes/**/*'
+
+  s.swift_version = '4.2'
   
   # s.resource_bundles = {
   #   'RxSegmentedControl' => ['RxSegmentedControl/Assets/*.png']
@@ -39,4 +41,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift', '~> 4.4'
+  s.dependency 'RxCocoa', '~> 4.4'
+  s.dependency 'RxSwiftExt', '~> 3.4'
 end
