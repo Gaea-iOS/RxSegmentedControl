@@ -2,7 +2,7 @@ PODS:
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
-  - RxSegmentedControl (0.1.0):
+  - RxSegmentedControl (0.2.0):
     - RxCocoa (~> 4.4)
     - RxSwift (~> 4.4)
     - RxSwiftExt (~> 3.4)
@@ -34,7 +34,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
-  RxSegmentedControl: 8606127c73449407e48427d1ccdd719abe4fce01
+  RxSegmentedControl: 539d61891daca14fcf36a9f16691f9821d154b3c
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
 

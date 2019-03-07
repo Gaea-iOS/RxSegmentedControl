@@ -14,6 +14,7 @@ public class RxAnimatedSegmentedControl: RxSegmentedControl {
         didSet {
             oldValue.removeFromSuperview()
             addSubview(animatedView)
+            animatedView.isHidden = false
         }
     }
 
@@ -43,8 +44,10 @@ public class RxAnimatedSegmentedControl: RxSegmentedControl {
             return CGPoint(x: x, y: y)
         }()
 
-        UIView.animate(withDuration: 0.2) {
+        UIView.animate(withDuration: 0.2, animations: {
             self.animatedView.frame = CGRect(origin: origin, size: size)
+        }) { _ in
+            self.animatedView.isHidden = false
         }
     }
 }

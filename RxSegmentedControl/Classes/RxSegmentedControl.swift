@@ -112,7 +112,6 @@ public class RxSegmentedControl: UIView {
                 .bind(to: button.rx.isSelected)
                 .disposed(by: disposeBag)
 
-            button.backgroundColor = .yellow
             return button
         }
 
