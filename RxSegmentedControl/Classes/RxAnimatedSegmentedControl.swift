@@ -31,6 +31,10 @@ public class RxAnimatedSegmentedControl: RxSegmentedControl {
 
     func scrollAnimatedView(to index: Int) {
 
+        guard index >= 0 && index < stackView.arrangedSubviews.count else {
+            return
+        }
+
         bringSubviewToFront(animatedView)
 
         let arrangedSubview = stackView.arrangedSubviews[index]
