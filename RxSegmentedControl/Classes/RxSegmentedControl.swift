@@ -163,6 +163,9 @@ class SegmentedControlItem: UIButton {
 extension UIStackView {
 
     func removeAllArrangedSubviews() {
-        arrangedSubviews.forEach { [unowned self] in self.removeArrangedSubview($0) }
+        arrangedSubviews.forEach { [unowned self] in
+            self.removeArrangedSubview($0)
+            $0.removeFromSuperview()
+        }
     }
 }

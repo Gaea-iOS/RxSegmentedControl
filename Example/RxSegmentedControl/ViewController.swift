@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         segmentedControl.items = ["1", "2", "3"]
+
+        segmentedControl.items = ["3", "2", "3"]
+
         let view = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 50, height: 2)))
         view.backgroundColor = .red
         segmentedControl.animatedView = view
